@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Nav.css'
 import logo from './images/logo.svg'
+import {navigation} from '../../ultis/index'
 
 const Nav = props => {
+	useEffect(() => {
+		navigation()
+	},[])
+	
     return (
         <div className = "navigation">
-			<div className = "container-fluid">
+			<div className = "container-fluid flex space-between">
 				<div className = "row">
 					<div className = "col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
 						<div className = "logo">

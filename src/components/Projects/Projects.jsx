@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Projects.css'
+import {projects} from '../../ultis/index'
 
-const Projects = props => {
+const Projects = props => {    
+    useEffect(() => {
+        projects()
+    },[])
+
     return (
         <div className = "projects" id="projects">
 			<div className = "container-fluid">
