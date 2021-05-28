@@ -1,25 +1,24 @@
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import About from './components/About/About';
-import Banner from './components/Banner/Banner';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
-import Projects from './components/Projects/Projects';
-import Summary from './components/Summary/Summary';
+import Index from './views/Index';
+import Portfolio from './views/Portfolio';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <Banner></Banner>
-      <About></About>
-      <Summary></Summary>
-      <Projects></Projects>
-      <Contact></Contact>
-      <Footer></Footer>
-    </div>
-  );
+    <Router>
+      <div>
+        <Nav></Nav>
+        <Switch>
+          <Route exact path="/" component = {Index} />
+          <Route exact path="/contact" component = {Contact} />
+          <Route exact path="/portfolio" component = {Portfolio} />
+        </Switch>
+        <Footer></Footer>
+      </div>
+    </Router>      
+    );
 }
-
-export default App;
