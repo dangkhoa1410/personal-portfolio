@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import './Nav.css'
 import logo from './images/logo.svg'
-import {navigation} from '../../ultis/index'
+import {navigation} from '../../utils/index'
 import { Link } from 'react-router-dom'
 
 const Nav = props => {
-	// useEffect(() => {
-	// 	navigation()
-	// },[])
+	useEffect(() => {
+		navigation()
+	},[])
 	
     return (
         <div className = "navigation">
@@ -15,7 +15,7 @@ const Nav = props => {
 				<div className = "row">
 					<div className = "col-xs-1 col-sm-1 col-md-1 col-lg-1">
 						<div className="logo">
-							<Link>
+							<Link to="/">
 							<img src = {logo} alt="Logo"/>
 							</Link>
 						</div>

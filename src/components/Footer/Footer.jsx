@@ -13,25 +13,25 @@ const Footer = props => {
 					<div className = "media-links flex justify-content-center">
 						<div className = "col-sm-1 col-md-1 col-sm-offset-4 col-md-offset-4">
 							<div className = "facebook">
-								<a href = "#"><img className = "img-responsive" src = {facebook} /></a>
+								<a href = "#"><img className = "img-responsive" src = {facebook} alt="Icon"/></a>
 							</div>
 						</div>
 
 						<div className = "col-sm-1 col-md-1">
 							<div className = "linkedin">
-								<a href = "#"><img className = "img-responsive" src = {linkedin} /></a>
+								<a href = "#"><img className = "img-responsive" src = {linkedin} alt="Icon"/></a>
 							</div>
 						</div>
 
 						<div className = "col-sm-1 col-md-1">
 							<div className = "pinterest">
-								<a href = "#"><img className = "img-responsive" src = {pinterest} /></a>
+								<a href = "#"><img className = "img-responsive" src = {pinterest} alt="Icon"/></a>
 							</div>
 						</div>
 
 						<div className = "col-sm-1 col-md-1">
 							<div className = "email-icon">
-								<a href = "#"><img className = "img-responsive" src = {email} /></a>
+								<a href = "#"><img className = "img-responsive" src = {email} alt="Icon"/></a>
 							</div>
 						</div>
 					</div>

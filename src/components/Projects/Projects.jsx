@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './Projects.css'
-import {projects} from '../../ultis/index'
+import {projects} from '../../utils/index'
 
 const Projects = props => {    
     useEffect(() => {
