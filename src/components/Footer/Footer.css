@@ -1,25 +1,13 @@
-.resume {
-    padding: 50px 0px;
-    font-family: "Calisto MT", Helvetica, serif;
-  }
-  
-  .resume-header {
-    margin-bottom: 20px;
-  }
-  .objective h4,
-  .education h4,
-  .work-experience h4,
-  .resume-projects h4,
-  .activities h4,
-  .skills h4,
-  .endorsements h4 {
-    border-bottom: 1px solid black;
-  }
   .footer {
+    width: 100%;
     background-color: black;
     color: white;
     padding: 50px 0;
     font-family: "Roboto", Helvetica, serif;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle; 
+    justify-content: center;
   }
   
   .footer h3,

@@ -6,12 +6,16 @@
     background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
     
 }
-
+.navigation .row+div {
+    width: 30%;
+}
 .logo img {
     max-width: 90px;
+    min-width: 25px;
 }
 .primary-nav {
     padding-right: 50px;
+    text-align: right;
 }
 .primary-nav li {
     display: inline-block;

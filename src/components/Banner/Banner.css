@@ -45,3 +45,11 @@
     background-color: white;
   }
   
+  .banner-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-buttons > * {
+    margin-left: 2vw;
+  }

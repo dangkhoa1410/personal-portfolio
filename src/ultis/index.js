@@ -6,6 +6,7 @@ export function navigation() {
       'margin-top',
       ($('.primary-nav').height() - $('.primary-nav li').height()) / 2 + 'px'
     );
+
     var doit;
     $(window).on('resize', (function () {
       clearTimeout(doit);
@@ -41,6 +42,7 @@ export function navigation() {
         $('.strike-zone-project .row').outerHeight()) /
         2
     );
+    
     var doit;
     $(window).on('resize', (function () {
       clearTimeout(doit);

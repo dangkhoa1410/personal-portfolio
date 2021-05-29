@@ -13,9 +13,9 @@ const Banner = props => {
 					</div>
 				</div>
 
-				<div className = "row text-center">
+				<div className = "row">
 					<div className = "banner-buttons">
-						<div className = "col-sm-1 col-md-1 col-sm-offset-5 col-md-offset-5">
+						<div className = "col-sm-1 col-md-1">
 							<a className = "btn btn-default btn-border" href = "#about">Info</a>
 						</div>
 

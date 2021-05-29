@@ -18,6 +18,7 @@
   .summary p {
     font-family: "Roboto", Helvetica, serif;
   }
-  .img-responsive {
-      height: 100%;
+
+  div[class$= "-summary"] {
+    display: flex;
   }
