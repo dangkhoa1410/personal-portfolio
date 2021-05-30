@@ -10,6 +10,7 @@ import Portfolio from './views/Portfolio';
 export default function App() {
   return (
     <Router>
+      <div className="">
         <Nav></Nav>
         <Switch>
           <Route exact path="/" component = {Index} />
@@ -18,6 +19,7 @@ export default function App() {
 
         </Switch>
         <Footer></Footer>
+        </div>
     </Router>      
     );
 }

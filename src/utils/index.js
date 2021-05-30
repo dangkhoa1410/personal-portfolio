@@ -41,7 +41,7 @@ export function navigation() {
     );
 
     const btnHeight = $('.project-more-info').height()
-    $('.project-more-info').css('margin-top','-2.5vw')
+    $('.project-more-info').css('margin-top','-2.7vw')
     $('.project-more-info').css('margin-left',(width-$('.project-more-info').width())/2)
     
   }

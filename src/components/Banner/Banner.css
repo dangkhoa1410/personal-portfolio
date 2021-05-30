@@ -12,10 +12,10 @@
     font-family: "Source Sans Pro", Arial, sans-serif;
   }
   #hello {
-    font-size: 3.7vw;
+    font-size: 3.4vw;
   }
   #name {
-    font-size: 12vw;
+    font-size: 10vw;
   }
   #person-description {
     font-size: 4.5vw;
@@ -25,7 +25,7 @@
   .projects .btn-border {
     background-color: transparent;
     width: 100%;
-    margin-top: 2vw;
+    margin-top: 1.5vw;
     color: white;
     font-family: "Roboto", Helvetica, serif;
     font-size: 1.5vw;
