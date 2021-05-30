@@ -1,6 +1,6 @@
 .contact {
     background-color: #3a3a3a;
-    padding: 50px 150px;
+    padding: 2rem 6rem;
     color: white;
   }
   .contact input,
@@ -20,25 +20,25 @@
     font-style: italic;
   }
   .contact-header-quote h4 {
-    margin: 5px 0;
+    margin: 0.3rem 0;
   }
   .contact-instructions,
   .contact-form-body {
-    margin-top: 50px;
+    margin-top: 0.3rem;
     padding: 0px 6%;
   }
   
   .email,
   .message {
-    margin: 15px 0px;
+    margin: 0.3rem 0px;
   }
   .contact input,
   .contact textarea {
     width: 100%;
-    padding: 10px;
-    margin: 3px 0px;
+    padding: 0.3rem;
+    margin: 0.2rem 0px;
   }
   
   .submit-contact .btn-border {
-    margin-top: 10px;
+    margin-top: 0.3rem;
   }

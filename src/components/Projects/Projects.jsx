@@ -9,6 +9,7 @@ const Projects = props => {
 
     return (
         <div className = "projects" id="projects">
+			<div className="container-fluid">
 				<div className = "row">
 					<div className = "col-sm-12 col-md-12 text-center">
 						<div className = "projects-header">
@@ -20,7 +21,7 @@ const Projects = props => {
 				<div className = "row">
 					<div className = "col-sm-12 col-md-12 text-center">
 						<div className = "projects-header-quote">
-							<h3>Sharing my endeavors and passions...</h3>
+							<h2>Sharing my endeavors and passions...</h2>
 						</div>
 					</div>
 				</div>
@@ -76,6 +77,7 @@ const Projects = props => {
 						</div>
 					</div>
 				</div>
+			</div>
 		</div>
     )
 }

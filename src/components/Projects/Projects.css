@@ -1,19 +1,32 @@
 .projects {
     background-color: #59585d;
-    padding: 50px;
+    padding: 10vw;
     color: white;
   }
   
   .projects-header-quote {
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
   }
   .projects h1,
-  .projects h3 {
+  .projects h2 {
     font-family: "Source Sans Pro", Arial, sans-serif;
+  }
+
+  .projects h1 {
+    font-size: 3.5vw;
+  }
+  .projects h2 {
+    font-size: 2.8vw;
+  }
+  .projects h3 {
+    font-size: 2.4vw;
+    padding: 0.5vw auto;
+    padding-top: 6vw !important;
   }
   .projects p {
     font-family: "Roboto", Helvetica, serif;
-    padding: 0 10px;
+    font-size: 1.2vw;
+    padding: 0 0.3vw;
   }
   
   .projects-header-quote {
@@ -24,8 +37,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
       url(./images/luvtalklogo.png);
     background-position: center center;
-    height: 20rem;
-    position: relative;
   }
   
   .personal-website-project {
@@ -42,5 +53,10 @@
 
   .project-more-info{
     position: absolute;
-    margin-left: 11vw;
+    margin-left: 9.5vw;
+    margin-top: -2vw;
+  }
+
+  .relative-pos {
+    position: relative;
   }

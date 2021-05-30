@@ -12,13 +12,13 @@
   
   .about-header h1 {
     font-family: "Source Sans Pro", Arial, sans-serif;
-    font-size: 34pt;
+    font-size: 5vw;
   }
   
   .about-header-quote {
     font-family: "Slabo", Helvetica, serif;
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 2vw;
   }
   
   .about-general-description,
@@ -29,19 +29,19 @@
   .about-general-description h2,
   .about-statistic-description h2 {
     font-family: "Source Sans Pro", Arial, sans-serif;
-    font-size: 24pt;
-    margin-bottom: 20px;
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
   }
   
   .about-general-description p,
   .about-statistic-description p {
     font-family: "Roboto", Helvetica, serif;
-    font-size: 12pt;
-    margin-bottom: 20px;
+    font-size: 1.3vw;
+    margin-bottom: 1.5vw;
   }
   
   .about-statistic-description p {
-    margin: 5px 0px;
+    margin: 0.25vw 0px;
   }
   .about-option-buttons {
     display: flex;
@@ -51,10 +51,10 @@
   .resume .btn-black-border {
     background-color: transparent;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 3vw;
     color: black;
     font-family: "Roboto", Helvetica, serif;
-    font-size: 16pt;
+    font-size: 2vw;
     border-radius: 0;
     border: 2px solid black;
     -webkit-transition: all 200ms ease-out;

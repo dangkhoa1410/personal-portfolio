@@ -10,7 +10,7 @@ import passion from './images/passion.svg'
 const Summary = props => {
     return (
         <div className = "summary">
-			
+			<div className="container-fluid">
 				<div className = "row">
 						<div className = "col-sm-1 col-md-1">
 							<div className = "development-img">
@@ -66,7 +66,7 @@ const Summary = props => {
 						</div>
 					
 				</div>
-			
+			</div>
 		</div>
     )
 }

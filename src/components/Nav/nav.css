@@ -2,31 +2,27 @@
 .navigation {
     position: absolute;
     width: 100%;
-    padding: 10px 0px;
+    padding: 1rem 0px;
     background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
     
 }
-.navigation .row+div {
-    width: 30%;
-}
 .logo img {
-    max-width: 90px;
-    min-width: 25px;
+    max-width: 9rem;
 }
 .primary-nav {
-    padding-right: 50px;
+    padding-right: 5rem;
     text-align: right;
 }
 .primary-nav li {
     display: inline-block;
-    margin: 0px 20px;
+    margin: 0px 2rem;
     color: white;
-    font-size: 13pt;
+    font-size: 1.2rem;
 }
 
 .primary-nav a {
     color: white;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     -webkit-transition: border 50ms linear;
     -moz-transition: border 50ms linear;
     -o-transition: border 50ms linear;
