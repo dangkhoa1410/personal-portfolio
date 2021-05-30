@@ -1,11 +1,14 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Projects.css'
 import {projects} from '../../utils/index'
+import { useWindowSize } from '../../utils/useWindowSize'
 
-const Projects = props => {    
+const Projects = props => {
+	const windowSize = useWindowSize()
+
     useEffect(() => {
         projects()
-    },[])
+    },[windowSize])
 
     return (
         <div className = "projects" id="projects">
@@ -28,7 +31,7 @@ const Projects = props => {
 
 				<div className = "row">
 					<div className = "col-sm-4 col-md-4 text-center">
-						<div className = "luvtalk-project">
+						<div className = "luvtalk-project relative-pos">
 							<h3>LUV TALK Website</h3>
 							<p>Website, created during my first internship, which utilized HTML, CSS, PHP, Ajax, Javascript/jQuery, and Wordpress. </p>
 							<div className = "row">
@@ -37,12 +40,12 @@ const Projects = props => {
 										<a className = "btn btn-default btn-border" href = "#">More</a>
 									</div>
 								</div>
-							</div>
+							</div>	
 						</div>
 					</div>
 
-					<div className = "col-sm-4 col-md-4 text-center">
-						<div className = "personal-website-project">
+					<div className = "col-sm-4 col-md-4 text-center relative-pos">
+						<div className = "personal-website-project ">
 							<h3>Personal Website</h3>
 							<p>Enjoyable side project that was created to experiment with more HTML and CSS, but also provided an outlet to showcase my abilities and interests.</p>
 							<div className = "row">
@@ -56,7 +59,7 @@ const Projects = props => {
 					</div>
 
 					<div className = "col-sm-4 col-md-4 text-center">
-						<div className = "strike-zone-project">
+						<div className = "strike-zone-project relative-pos">
 							<h3>Strike Zone Analysis</h3>
 							<p>Data analytics project completed during my time at the Illinois Math and Science Academy which studied the baseball strike zone based on the state of the game.</p>
 							<div className = "row">

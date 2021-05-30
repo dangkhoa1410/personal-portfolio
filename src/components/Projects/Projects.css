@@ -21,12 +21,14 @@
   .projects h3 {
     font-size: 2.4vw;
     padding: 0.5vw auto;
-    padding-top: 6vw !important;
+    /* padding-top: 6vw !important; */
   }
   .projects p {
     font-family: "Roboto", Helvetica, serif;
     font-size: 1.2vw;
     padding: 0 0.3vw;
+    height: 35%;
+    overflow: auto;
   }
   
   .projects-header-quote {
@@ -53,8 +55,12 @@
 
   .project-more-info{
     position: absolute;
-    margin-left: 9.5vw;
-    margin-top: -2vw;
+  }
+
+  .project-more-info .btn {
+    height: 3.5vw;
+    width: 6vw;
+    font-size: 1.4vw;
   }
 
   .relative-pos {

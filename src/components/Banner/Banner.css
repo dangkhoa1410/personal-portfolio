@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    padding: 14.7% 0; /* Center contents within the container, make background image cover*/
+    padding: 14% 0; /* Center contents within the container, make background image cover*/
     color: white;
   }
   
@@ -12,13 +12,13 @@
     font-family: "Source Sans Pro", Arial, sans-serif;
   }
   #hello {
-    font-size: 4vw;
+    font-size: 3.7vw;
   }
   #name {
-    font-size: 15vw;
+    font-size: 12vw;
   }
   #person-description {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   .banner-buttons .btn-border,
   .submit-contact .btn-border,

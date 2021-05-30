@@ -3,11 +3,14 @@ import './Nav.css'
 import logo from './images/logo.svg'
 import {navigation} from '../../utils/index'
 import { Link } from 'react-router-dom'
+import { useWindowSize } from '../../utils/useWindowSize'
 
 const Nav = props => {
-	useEffect(() => {
-		navigation()
-	},[])
+	const windowSize = useWindowSize
+
+    useEffect(() => {
+        navigation()
+    },[windowSize])
 	
     return (
         <div className = "navigation">

@@ -7,21 +7,18 @@ export function navigation() {
       ($('.primary-nav').height() - $('.primary-nav li').height()) / 2 + 'px'
     );
 
-    var doit;
-    $(window).on('resize', (function () {
-      clearTimeout(doit);
-      doit = setTimeout(navigation, 500);
-    }));
   }
   
   export function projects() {
-    $('.luvtalk-project').css('height', $('.luvtalk-project').width());
+    const width = $('.luvtalk-project').width()
+
+    $('.luvtalk-project').css('height', width);
     $('.luvtalk-project h3').css(
       'padding-top',
       ($('.luvtalk-project').height() -
         $('.luvtalk-project h3').height() -
         $('.luvtalk-project .row').outerHeight()) /
-        2
+        3
     );
     $('.personal-website-project').css(
       'height',
@@ -32,7 +29,7 @@ export function navigation() {
       ($('.personal-website-project').height() -
         $('.personal-website-project h3').height() -
         $('.personal-website-project .row').outerHeight()) /
-        2
+        3
     );
     $('.strike-zone-project').css('height', $('.strike-zone-project').width());
     $('.strike-zone-project h3').css(
@@ -40,13 +37,12 @@ export function navigation() {
       ($('.strike-zone-project').height() -
         $('.strike-zone-project h3').height() -
         $('.strike-zone-project .row').outerHeight()) /
-        2
+        3
     );
+
+    const btnHeight = $('.project-more-info').height()
+    $('.project-more-info').css('margin-top','-2.5vw')
+    $('.project-more-info').css('margin-left',(width-$('.project-more-info').width())/2)
     
-    var doit;
-    $(window).on('resize', (function () {
-      clearTimeout(doit);
-      doit = setTimeout(projects, 500);
-    }));
   }
   

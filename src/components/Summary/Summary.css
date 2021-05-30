@@ -11,7 +11,9 @@
     padding: 4vw 6%;
     width: 100%;
   }
-  
+  .summary .row > *:nth-child(even) {
+    margin-right: 6vw;
+  }
   .summary h3 {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-size: 2.2vw;
@@ -19,8 +21,4 @@
   .summary p {
     font-family: "Roboto", Helvetica, serif;
     font-size: 1.3vw;
-  }
-
-  div[class$= "-summary"] {
-    display: flex;
   }
