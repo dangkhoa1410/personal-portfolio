@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import './Projects.css'
 import {projects} from '../../utils/index'
 import { useWindowSize } from '../../utils/useWindowSize'
@@ -74,7 +74,7 @@ const Projects = props => {
 				</div>
 
 				<div className = "row">
-					<div className = "col-sm-2 col-md-2 offset-5">
+					<div className = "col col-sm-2 col-md-2 offset-sm-5">
 						<div className = "see-more-button">
 							<a className = "btn btn-default btn-border" href = "#">More Projects</a>
 						</div>
