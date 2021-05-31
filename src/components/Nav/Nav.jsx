@@ -4,13 +4,13 @@ import logo from './images/logo.svg'
 import {navigation} from '../../utils/index'
 import { Link } from 'react-router-dom'
 import { useWindowSize } from '../../utils/useWindowSize'
+import withResizing from '../../HOC/withResizing'
 
 const Nav = props => {
-	const windowSize = useWindowSize
-
-    useEffect(() => {
-        navigation()
-    },[windowSize])
+	// const windowSize = useWindowSize
+    // useEffect(() => {
+    //     navigation()
+    // },[windowSize])
 	
     return (
         <div className = "navigation">
@@ -39,4 +39,5 @@ const Nav = props => {
     )
 }
 
-export default Nav
+// export default Nav
+export default withResizing(Nav,navigation)
