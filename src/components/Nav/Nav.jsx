@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import './Nav.css'
 import logo from './images/logo.svg'
-import {navigation} from '../../utils/index'
+import {navigation} from '../../utils/Jquery/index'
 import { Link } from 'react-router-dom'
-import { useWindowSize } from '../../utils/useWindowSize'
+import { useWindowSize } from '../../utils/Hooks/useWindowSize'
 import withResizing from '../../HOC/withResizing'
 
 const Nav = props => {	

@@ -1,6 +1,6 @@
 //Run a script to style a component
 import React, { useEffect } from 'react'
-import { useWindowSize } from '../utils/useWindowSize'
+import { useWindowSize } from '../utils/Hooks/useWindowSize'
 
 const withResizing = (BaseComponent,useEffectFn) => props => {
     const windowSize = useWindowSize()

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import './Projects.css'
-import {projects} from '../../utils/index'
-import { useWindowSize } from '../../utils/useWindowSize'
+import {projects} from '../../utils/Jquery/index'
+import { useWindowSize } from '../../utils/Hooks/useWindowSize'
 import withStyling from '../../HOC/withResizing'
 
 const Projects = props => {
