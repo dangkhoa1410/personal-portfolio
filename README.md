@@ -7,7 +7,7 @@ This project was designed using React.js and Boostrap
 Default pages include Home, Contact, and Porfolio Page
 You can add a custom page in /src/views
 
-## Components
+## [Components](/src/components)
 
 Each page consists of 7 main components
 - Nav: Navigation bar
@@ -24,16 +24,16 @@ You can add additional components in /src/components
 
 Advanced features to support the project
 
-### JQuery
+### [JQuery](/src/utils/Jquery)
 
 Add your own Jquery script in the utils/Script folder (Default script index.js)
 
-### Custom Hooks
+### [Custom Hooks](/src/utils/Hooks)
 
 - You can find all the custom hooks in /src/utils/Hooks
-- Resizing components when users resize their browser with useWindowSize
+- useWindowSize: Resizing components when users resize their browser 
 
-### HOC
+### [HOC](/src/HOC)
 
 - High-order components to support reusable logic and DRY
 - HOC can be found under /src/HOC
