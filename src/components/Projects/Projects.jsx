@@ -2,13 +2,13 @@ import React, {useEffect} from 'react'
 import './Projects.css'
 import {projects} from '../../utils/index'
 import { useWindowSize } from '../../utils/useWindowSize'
+import withStyling from '../../HOC/withResizing'
 
 const Projects = props => {
-	const windowSize = useWindowSize()
-
-    useEffect(() => {
-        projects()
-    },[windowSize])
+	// const windowSize = useWindowSize()
+    // useEffect(() => {
+    //     projects()
+    // },[windowSize])
 
     return (
         <div className = "projects" id="projects">
@@ -85,4 +85,7 @@ const Projects = props => {
     )
 }
 
-export default Projects 
+// export default Projects
+
+//Render with HOC
+export default withStyling(Projects,projects)
