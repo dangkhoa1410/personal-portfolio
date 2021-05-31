@@ -11,5 +11,4 @@ const withResizing = (BaseComponent,useEffectFn) => props => {
     return <BaseComponent {...props}></BaseComponent>
 }
 
-//Render with HOC
 export default withResizing
