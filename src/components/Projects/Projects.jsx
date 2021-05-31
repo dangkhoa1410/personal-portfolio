@@ -5,11 +5,7 @@ import { useWindowSize } from '../../utils/useWindowSize'
 import withStyling from '../../HOC/withResizing'
 
 const Projects = props => {
-	// const windowSize = useWindowSize()
-    // useEffect(() => {
-    //     projects()
-    // },[windowSize])
-
+	//Add project info here
 	const projectInfo = [
 		{
 			className: 'luvtalk-project',

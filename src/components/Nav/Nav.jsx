@@ -6,12 +6,7 @@ import { Link } from 'react-router-dom'
 import { useWindowSize } from '../../utils/useWindowSize'
 import withResizing from '../../HOC/withResizing'
 
-const Nav = props => {
-	// const windowSize = useWindowSize
-    // useEffect(() => {
-    //     navigation()
-    // },[windowSize])
-	
+const Nav = props => {	
     return (
         <div className = "navigation">
 			<div className = "container-fluid">
