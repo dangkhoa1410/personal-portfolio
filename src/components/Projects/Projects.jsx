@@ -49,9 +49,9 @@ const Projects = props => {
 				<div className = "row">				
 					{/* Render project info here */}
 					{
-						projectInfo.map(val => {
+						projectInfo.map((val,idx) => {
 							return (
-								<div className = "col-sm-4 col-md-4 text-center mb-3">
+								<div key={idx} className = "col-sm-4 col-md-4 text-center mb-3">
 									<div className = {val.className}>
 										<h3>{val.h3}</h3>
 										<p>{val.p}</p>

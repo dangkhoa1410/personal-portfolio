@@ -19,5 +19,10 @@ describe('App test', () => {
         expect(wrapper.containsAllMatchingElements([Nav,Banner,About,Summary,Projects,Contact,Footer]))
     })
 
+    it('renders three project info', () => {
+        const wrapper = mount(<App/>)        
+        const projectRender = wrapper.find({className:'col-sm-4 col-md-4 text-center mb-3'})
+        expect(projectRender.length).toBe(3)
+    })
 
 })
