@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import email from './images/email.svg'
 import facebook from './images/facebook.svg'
@@ -62,34 +63,34 @@ const Footer = props => {
 
 					<div className = "col-sm-2 col-md-2 text-center">
 						<div className = "home-footer">
-							<h4><a href = "/">Home</a></h4>
+							<h4><Link to="/">Home</Link></h4>
 						</div>
 					</div>
 
 					<div className = "col-sm-2 col-md-2 text-center">
 						<div className = "portfolio-footer">
-							<h4><a href = "/portfolio">Portfolio</a></h4>
+							<h4><Link to='/portfolio'>Portfolio</Link></h4>
 							<ul>
-								<li><a href = "/portfolio">Project1</a></li>
-								<li><a href = "/portfolio">Project2</a></li>
-								<li><a href = "/portfolio">Project3</a></li>
-								<li><a href = "/portfolio">See All</a></li>
+								<li><Link to='/portfolio'>Project 1</Link></li>
+								<li><Link to='/portfolio'>Project 2</Link></li>
+								<li><Link to='/portfolio'>Project 3</Link></li>
+								<li><Link to='/portfolio'>See All</Link></li>
 							</ul>
 						</div>
 					</div>
 
 					<div className = "col-sm-2 col-md-2 text-center">
 						<div className = "resume-footer">
-							<h4><a href = "/portfolio">Resume</a></h4>
+							<h4><Link to='/portfolio'>Resume</Link></h4>
 							<ul>
-								<li><a href = "/portfolio">Download</a></li>
+								<li><Link to='/portfolio'>Download</Link></li>
 							</ul>
 						</div>
 					</div>
 
 					<div className = "col-sm-2 col-md-2 text-center">
 						<div className = "contact-footer">
-							<h4><a href = "/contact">Contact</a></h4>
+							<h4><Link to='/contact'>Contact</Link></h4>
 						</div>
 					</div>
 				</div>

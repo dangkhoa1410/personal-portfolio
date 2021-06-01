@@ -10,16 +10,17 @@ import Portfolio from './views/Portfolio';
 export default function App() {
   return (
     <Router>
-        <Nav></Nav>
-        
-        {/* Render different pages */}
-        <Switch>
-          <Route exact path="/" component = {Index} />
-          <Route exact path="/contact" component = {Contact} />
-          <Route exact path="/portfolio" component = {Portfolio} />
+      <Nav></Nav>
 
-        </Switch>
-        <Footer></Footer>
+      {/* Render different pages */}
+      <Switch>
+        <Route exact path="/" component = {Index} />
+        <Route exact path="/contact" component = {Contact} />
+        <Route exact path="/portfolio" component = {Portfolio} />
+
+      </Switch>
+
+      <Footer></Footer>
     </Router>      
     );
 }
