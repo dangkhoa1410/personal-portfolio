@@ -4,12 +4,14 @@ import './App.css';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
+import ScrollToTop from './utils/ScorllToTop';
 import Index from './views/Index';
 import Portfolio from './views/Portfolio';
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Nav></Nav>
 
       {/* Render different pages */}
@@ -19,7 +21,7 @@ export default function App() {
         <Route exact path="/portfolio" component = {Portfolio} />
 
       </Switch>
-
+      
       <Footer></Footer>
     </Router>      
     );
