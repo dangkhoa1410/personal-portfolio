@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import './Projects.css'
+import '../../static/CSS/Projects.css'
 import {projects} from '../../utils/Jquery/index'
 import { useWindowSize } from '../../utils/Hooks/useWindowSize'
 import withStyling from '../../HOC/withResizing'

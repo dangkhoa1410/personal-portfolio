@@ -1,5 +1,5 @@
 import React from 'react'
-import './Summary.css'
+import '../../static/CSS/Summary.css'
 import developerDesign from './images/developerdesign.svg'
 import inovativeSolutions from './images/innovativesolutions.svg'
 import responsiveDesign from './images/responsivedesign.svg'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Footer.css'
+import '../../static/CSS/Footer.css'
 import email from './images/email.svg'
 import facebook from './images/facebook.svg'
 import linkedin from './images/linkedin.svg'

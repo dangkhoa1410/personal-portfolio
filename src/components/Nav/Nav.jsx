@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './Nav.css'
+import '../../static/CSS/Nav.css'
 import logo from './images/logo.svg'
 import {navigation} from '../../utils/Jquery/index'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
