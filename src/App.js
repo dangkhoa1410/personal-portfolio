@@ -4,9 +4,9 @@ import './App.css';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
-import ScrollToTop from './utils/ScorllToTop';
 import Index from './views/Index';
 import Portfolio from './views/Portfolio';
+import ScrollToTop from './utils/ScrollToTop';
 
 export default function App() {
   return (
