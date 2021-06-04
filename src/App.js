@@ -1,12 +1,12 @@
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Nav from './components/Nav/Nav';
-import Index from './views/Index';
-import Portfolio from './views/Portfolio';
-import ScrollToTop from './utils/ScrollToTop';
+import Footer from './components/Footer';
+import Nav from './components/Nav';
+import IndexPage from './views/IndexPage'
+import ContactPage from './views/ContactPage'
+import PortfolioPage from './views/IndexPage';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
@@ -16,9 +16,9 @@ export default function App() {
 
       {/* Render different pages */}
       <Switch>
-        <Route exact path="/" component = {Index} />
-        <Route exact path="/contact" component = {Contact} />
-        <Route exact path="/portfolio" component = {Portfolio} />
+        <Route exact path="/" component = {IndexPage} />
+        <Route exact path="/contact" component = {ContactPage} />
+        <Route exact path="/portfolio" component = {PortfolioPage} />
 
       </Switch>
       

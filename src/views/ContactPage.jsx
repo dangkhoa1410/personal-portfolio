@@ -1,7 +1,7 @@
 import React from 'react'
-import Contact from '../components/Contact/Contact'
+import Contact from '../components/Contact'
 
-const Contact = props => {
+const ContactPage = props => {
     return (
         <>
             <Contact></Contact>
@@ -9,4 +9,4 @@ const Contact = props => {
     )
 }
 
-export default Contact
+export default ContactPage

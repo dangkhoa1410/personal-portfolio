@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../static/CSS/About.css'
+import '../static/CSS/About.css'
 
 const About = props => {
     return (

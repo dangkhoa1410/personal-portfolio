@@ -1,9 +1,9 @@
 import React from 'react'
-import '../../static/CSS/Summary.css'
-import developerDesign from './images/developerdesign.svg'
-import inovativeSolutions from './images/innovativesolutions.svg'
-import responsiveDesign from './images/responsivedesign.svg'
-import passion from './images/passion.svg'
+import '../static/CSS/Summary.css'
+import developerDesign from '../static/images/developerdesign.svg'
+import inovativeSolutions from '../static/images/innovativesolutions.svg'
+import responsiveDesign from '../static/images/responsivedesign.svg'
+import passion from '../static/images/passion.svg'
 
 
 

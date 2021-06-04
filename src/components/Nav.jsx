@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react'
-import '../../static/CSS/Nav.css'
-import logo from './images/logo.svg'
-import {navigation} from '../../utils/Jquery/index'
+import '../static/CSS/Nav.css'
+import logo from '../static/images/logo.svg'
+import {navigation} from '../utils/Jquery/index'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
-import { useWindowSize } from '../../utils/Hooks/useWindowSize'
-import withResizing from '../../HOC/withResizing'
+import withResizing from '../HOC/withResizing'
 
 const Nav = props => {	
     return (

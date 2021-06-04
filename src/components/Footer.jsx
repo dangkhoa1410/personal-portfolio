@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../../static/CSS/Footer.css'
-import email from './images/email.svg'
-import facebook from './images/facebook.svg'
-import linkedin from './images/linkedin.svg'
-import pinterest from './images/pinterest.svg'
+import '../static/CSS/Footer.css'
+import email from '../static/images/email.svg'
+import facebook from '../static/images/facebook.svg' 
+import linkedin from '../static/images/linkedin.svg'
+import pinterest from '../static/images/pinterest.svg'
 
 const Footer = props => {
     return (
