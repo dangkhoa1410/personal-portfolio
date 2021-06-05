@@ -4,6 +4,7 @@ import {projects} from '../utils/Jquery/index'
 import { useWindowSize } from '../utils/Hooks/useWindowSize'
 import withStyling from '../HOC/withResizing'
 import Info from './Info'
+import img from '../static/images/luvtalklogo.png'
 
 const Projects = props => {
 	//Add project info here
@@ -31,19 +32,29 @@ const Projects = props => {
 				<div className = "row">				
 					{/* Render project info here */}
 					{
-						projectInfo.map((val,idx) => {
+						projectInfo.map((proj,idx) => {
 							return (
 								<div key={idx} className = "col-sm-4 col-md-4 text-center mb-3">
-									<div className = {val.className}>
-										<h3>{val.h3}</h3>
-										<p>{val.p}</p>
+									{/* <div className = {proj.className}>
+										<h3>{proj.h3}</h3>
+										<p>{proj.p}</p>
 										<div className = "row">
 											<div className = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 												<div className = "project-more-info">
-													<a className = "btn btn-default btn-border" href = {val.link}>More</a>
+													<a className = "btn btn-default btn-border" href = {proj.link}>More</a>
 												</div>
 											</div>
 										</div>	
+									</div> */}
+
+									<div className={"card project-container " + proj.className}>
+										<img className='card-img-top' src={proj.background}/>
+										<div className="card-body">
+											<div className="card-text">
+												<p>{proj.p}</p>
+												<a className = "btn btn-default btn-border btn-more" href = {proj.link}>More</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							)
@@ -51,13 +62,6 @@ const Projects = props => {
 					}					
 				</div>
 
-				<div className = "row">
-					<div className = "col col-sm-2 col-md-2 offset-sm-5">
-						<div className = "see-more-button">
-							<a className = "btn btn-default btn-border" href = "#">More Projects</a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
     )

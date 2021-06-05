@@ -10,36 +10,17 @@ export function navigation() {
   }
   
   export function projects() {
-    const width = $('.luvtalk-project').width()
+    const width = $('.project-container').width()
 
-    $('.luvtalk-project').css('height', width);
-    $('.luvtalk-project h3').css(
+    $('.project-container').css('height', width);
+    $('.project-container h3').css(
       'padding-top',
-      ($('.luvtalk-project').height() -
-        $('.luvtalk-project h3').height() -
-        $('.luvtalk-project .row').outerHeight()) /
+      ($('.project-container').height() -
+        $('.project-container h3').height() -
+        $('.project-container .row').outerHeight()) /
         3
     );
-    $('.personal-website-project').css(
-      'height',
-      $('.personal-website-project').width()
-    );
-    $('.personal-website-project h3').css(
-      'padding-top',
-      ($('.personal-website-project').height() -
-        $('.personal-website-project h3').height() -
-        $('.personal-website-project .row').outerHeight()) /
-        3
-    );
-    $('.strike-zone-project').css('height', $('.strike-zone-project').width());
-    $('.strike-zone-project h3').css(
-      'padding-top',
-      ($('.strike-zone-project').height() -
-        $('.strike-zone-project h3').height() -
-        $('.strike-zone-project .row').outerHeight()) /
-        3
-    );
-
+    
     $('.project-more-info').css('margin-top','-2.7vw')
     $('.project-more-info').css('margin-left',(width-$('.project-more-info').width())/2)
     
