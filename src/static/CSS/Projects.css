@@ -84,4 +84,28 @@
   .card-text {
     visibility: hidden;
   }
- 
+  .card-img {
+    height: inherit;
+    padding: 1vw;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card:hover .card-text {
+  visibility:visible;
+  animation: card-text 1.5s ease-out;
+}
+@keyframes card-text {
+  0% { 
+    transform: translateY(200%); 		
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% { 
+    transform: translateY(0%); 
+  }
+}
