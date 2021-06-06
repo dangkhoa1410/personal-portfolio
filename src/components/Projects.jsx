@@ -1,11 +1,8 @@
 import React, {useEffect} from 'react'
 import '../static/CSS/Projects.css'
 import {projects} from '../utils/Jquery/index'
-import { useWindowSize } from '../utils/Hooks/useWindowSize'
-import withStyling from '../HOC/withResizing'
+import withResizing from '../HOC/withResizing'
 import Info from './Info'
-import img from '../static/images/luvtalklogo.png'
-import { Link } from 'react-router-dom'
 
 const Projects = props => {
 	//Add project info here
@@ -59,4 +56,4 @@ const Projects = props => {
 // export default Projects
 
 //Render with HOC
-export default withStyling(Projects,projects)
+export default withResizing(Projects,projects)
