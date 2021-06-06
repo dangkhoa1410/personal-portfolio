@@ -5,6 +5,7 @@ import { useWindowSize } from '../utils/Hooks/useWindowSize'
 import withStyling from '../HOC/withResizing'
 import Info from './Info'
 import img from '../static/images/luvtalklogo.png'
+import { Link } from 'react-router-dom'
 
 const Projects = props => {
 	//Add project info here
@@ -35,26 +36,14 @@ const Projects = props => {
 						projectInfo.map((proj,idx) => {
 							return (
 								<div key={idx} className = "col-sm-4 col-md-4 text-center mb-3">
-									{/* <div className = {proj.className}>
-										<h3>{proj.h3}</h3>
-										<p>{proj.p}</p>
-										<div className = "row">
-											<div className = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
-												<div className = "project-more-info">
-													<a className = "btn btn-default btn-border" href = {proj.link}>More</a>
-												</div>
-											</div>
-										</div>	
-									</div> */}
-
-									<div className={"card project-container " + proj.className}>
-										<img className='card-img-top' src={proj.background}/>
+									<div className={"card project-container " + proj.className}>										
+										<a href={proj.link}><img className='card-img' src={proj.background}/></a>
 										<div className="card-body">
-											<div className="card-text">
-												<p>{proj.p}</p>
-												<a className = "btn btn-default btn-border btn-more" href = {proj.link}>More</a>
-											</div>
+												<div className="card-text">
+													<p>{proj.p}</p>													
+												</div>
 										</div>
+										
 									</div>
 								</div>
 							)

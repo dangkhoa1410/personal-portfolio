@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Nav from './components/Nav';
 import IndexPage from './views/IndexPage'
 import ContactPage from './views/ContactPage'
-import PortfolioPage from './views/IndexPage';
+import PortfolioPage from './views/PortfolioPage';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
