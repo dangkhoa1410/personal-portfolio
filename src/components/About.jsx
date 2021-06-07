@@ -22,6 +22,7 @@ const About = props => {
 						</div>
 					</div>
 				</div>
+				<br></br>
 
 				<div className = "row">
 					<div className = "about-general-description ">
