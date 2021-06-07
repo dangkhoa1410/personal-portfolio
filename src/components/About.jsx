@@ -1,7 +1,9 @@
 import React from 'react'
 import '../static/CSS/About.css'
+import Info from './Info'
 
 const About = props => {
+	const about = Info.about
     return (
         <div className = "about" id="about">
 			<div className = "container-fluid">
@@ -16,7 +18,7 @@ const About = props => {
 				<div className = "row">
 					<div className = "col-sm-12 col-md-12 text-center">
 						<div className = "about-header-quote">
-							<h3>Sharing a little bit of my story...</h3>
+							<h3>{about.headline}</h3>
 						</div>
 					</div>
 				</div>
@@ -25,7 +27,7 @@ const About = props => {
 					<div className = "about-general-description ">
 						<div className = "col-sm-8 col-md-8 ">
 							<h2>General Overview</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+							<p>{about.overview}</p>
 						</div>
 					</div>
 				</div>
@@ -38,10 +40,10 @@ const About = props => {
 							<h5><em>And for those that don't fancy reading:</em></h5>
 							<br/>
 
-							<p>Male, 200 years old.</p>
-							<p>Five feet 110 inches</p>
-							<p>Favorite fonts:Roboto </p>
-							<p>Loves to learn new things</p>
+							<p>{about.stat1}</p>
+							<p>{about.stat2}</p>
+							<p>{about.stat3}</p>
+							<p>{about.stat4}</p>
 	
 						</div>
 					</div>
