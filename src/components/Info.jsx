@@ -3,6 +3,12 @@ import bg2 from '../static/images/logo.svg'
 import bg3 from '../static/images/mlbproject.png'
 
 export default {
+	yourSelf: {
+		name: 'Khoa Dang',
+		phone: 'xxx-xxx-xxxx',
+		email: 'admin@gmail.com',
+		place: 'San Jose, CA'
+	},
     projectInfo : [
 		{
 			className: 'luvtalk-project',

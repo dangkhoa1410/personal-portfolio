@@ -5,8 +5,10 @@ import email from '../static/images/email.svg'
 import facebook from '../static/images/facebook.svg' 
 import linkedin from '../static/images/linkedin.svg'
 import pinterest from '../static/images/pinterest.svg'
+import Info from './Info'
 
 const Footer = props => {
+	const {yourSelf} = Info
     return (
         <div className = "footer">
 			<div className = "container-fluid">
@@ -41,13 +43,13 @@ const Footer = props => {
 				<div className = "row text-center">
 					<div className = "col-sm-6 col-md-6 text-right">
 						<div className = "personal-contact phone">
-							<h4>Phone: XXXXXX</h4>
+							<h4>Phone: {yourSelf.phone}</h4>
 						</div>
 					</div>
 
 					<div className = "col-sm-6 col-md-6 text-left">
 						<div className = "personal-contact email-personal-contact">
-							<h4>Email: XXXXX@gmail.com</h4>
+							<h4>Email: {yourSelf.email}</h4>
 						</div>
 					</div>
 				</div>
@@ -55,9 +57,9 @@ const Footer = props => {
 				<div className = "row">
 					<div className = "col-sm-4 col-md-4 text-center">
 						<div className = "company-information">
-							<h3>XXXX</h3>
+							<h3>{yourSelf.name}</h3>
 							<h4>Copyright &copy; 2021</h4>
-							<h4>NY</h4>
+							<h4>{yourSelf.place}</h4>
 						</div>
 					</div>
 
