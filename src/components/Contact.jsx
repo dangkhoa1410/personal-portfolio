@@ -1,7 +1,9 @@
 import React from 'react'
 import '../static/CSS/Contact.css'
+import Info from './Info'
 
 const Contact = props => {
+	const {yourSelf} = Info
     return (
         <div className = "contact" id="contact">
 			<div className = "container-fluid">
@@ -32,8 +34,8 @@ const Contact = props => {
 							<h2>Contact Information</h2>
 							<p>XXXX</p>
 							<p>XXXX</p>
-							<p>(XXXX)-445-7747</p>
-							<p>XXXXXX@gmail.com</p>
+							<p>{yourSelf.phone}</p>
+							<p>{yourSelf.email}</p>
 						</div>
 					</div>
 
